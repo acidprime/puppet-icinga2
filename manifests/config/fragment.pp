@@ -23,7 +23,7 @@ define icinga2::config::fragment(
 ) {
 
   include ::icinga2::params
-  require ::icinga2::config
+  #require ::icinga2::config
 
   case $::osfamily {
     'windows': {
